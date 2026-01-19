@@ -6,7 +6,11 @@ This capstone challenges you to build a predictive Bitcoin DCA (Dollar Cost Aver
 
 ## 🎯 The Capstone Objective
 
-The goal of this project is to evolve a basic MVRV-based DCA model into a sophisticated, market-aware strategy. You must:
+The goal of this project is to evolve a basic MVRV-based DCA model into a sophisticated, market-aware strategy.
+
+**The Challenge:** Improve the integration of Polymarket data into the model to produce superior predictive signals.
+
+### Your Tasks:
 1. **Fork the Template**: Create your own version of this repository to build your model.
 2. **Integrate Polymarket Data**: Leverage the provided Polymarket datasets (Politics, Finance, Crypto) to extract predictive signals.
 3. **Direct Integration**: Modify the core model logic to incorporate these signals alongside traditional indicators like MVRV and Moving Averages.
@@ -43,7 +47,7 @@ python data/download_data.py
 
 ---
 
-## 🏗️ The Foundation: Phase 1 (MVRV Model)
+## 🏗️ The Foundation (Baseline Model)
 
 The repository provides a working **Foundation Model** located in `template/`. This model uses:
 - **MVRV Z-score**: Buy more when undervalued (Deep Value Zone).
@@ -58,9 +62,11 @@ python -m template.backtest_template
 
 ---
 
-## 🛠️ The Challenge: Phase 2 (Polymarket Integration)
+## 🛠️ The Challenge (Polymarket Integration)
 
-Your task is to modify `template/model_development_template.py` to integrate Polymarket signals.
+Your task is to modify `template/model_development_template.py` to integrate Polymarket signals. 
+
+> **Important:** While the primary goal is Polymarket integration, you are also encouraged to make changes to the base model logic (MVRV, MA, etc.) if it helps you better incorporate the prediction market data and improve the model.
 
 ### Potential Signal Leads:
 - **Election Probabilities**: How do presidential odds correlate with BTC volatility?
